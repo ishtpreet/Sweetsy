@@ -12,24 +12,26 @@ import java.util.ArrayList;
 
 public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleViewHolder> {
     private ArrayList<ExampleItem> mExampleList;
-    public static class ExampleViewHolder extends RecyclerView.ViewHolder{
+
+    public static class ExampleViewHolder extends RecyclerView.ViewHolder {
         public ImageView mImageView;
         public TextView mTextView1;
         public TextView mTextView2;
 
         public ExampleViewHolder(View itemView) {
             super(itemView);
-            mImageView=itemView.findViewById(R.id.imageview);
-            mTextView1=itemView.findViewById(R.id.textview1);
-            mTextView2=itemView.findViewById(R.id.textview2);
+            mImageView = itemView.findViewById(R.id.imageview);
+            mTextView1 = itemView.findViewById(R.id.textview1);
+            mTextView2 = itemView.findViewById(R.id.textview2);
 
         }
     }
+
     public ExampleAdapter(ArrayList<ExampleItem> exampleList) {
-        mExampleList =exampleList;
+        mExampleList = exampleList;
     }
 
-        @Override
+    @Override
     public ExampleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.example_item, parent, false);
         ExampleViewHolder evh = new ExampleViewHolder(v);

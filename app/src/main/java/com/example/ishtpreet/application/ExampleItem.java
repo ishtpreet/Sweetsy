@@ -5,10 +5,10 @@ public class ExampleItem {
     private String mtext1;
     private String mtext2;
 
-    public ExampleItem(int imageresource, String text1, String text2){
-        mimageresource=imageresource;
-        mtext1=text1;
-        mtext2=text2;
+    public ExampleItem(int imageresource, String text1, String text2) {
+        mimageresource = imageresource;
+        mtext1 = text1;
+        mtext2 = text2;
     }
 
     public int getimageresource() {

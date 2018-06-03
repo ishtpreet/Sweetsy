@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -23,7 +26,7 @@
             android:id="@+id/abc"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="17dp"/>
+            android:layout_marginBottom="17dp" />
 
     </LinearLayout>
 
@@ -34,23 +37,50 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="27sp"
             android:text="NEW ARRIVALS"
-            android:textColor="@color/colorPrimary"
             android:textAlignment="center"
-            android:textStyle="bold"/>
+            android:textColor="@color/colorPrimary"
+            android:textSize="27sp"
+            android:textStyle="bold" />
     </RelativeLayout>
-        <RelativeLayout
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#72000000"
+            android:padding="4dp"
+            android:scrollbars="vertical">
 
-<android.support.v7.widget.RecyclerView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="4dp"
-    android:background="#72000000"
-    android:scrollbars="vertical"
-    android:id="@+id/RecyclerView"/>
+        </android.support.v7.widget.RecyclerView>
 
-    </RelativeLayout>
+
+
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/a"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/staticc"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
